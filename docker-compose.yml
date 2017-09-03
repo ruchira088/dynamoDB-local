@@ -1,0 +1,17 @@
+version: "2"
+
+services:
+
+  dynamodb-local-app:
+    build: .
+    volumes:
+      - "./:/opt/dynamoDB-local/"
+      - "~/.ivy2/:/root/.ivy2/"
+      - "~/.aws:/root/.aws"
+    ports:
+      - 5005:5005
+
+  dynamodb-local:
+    image: cnadiminti/dynamodb-local
+    ports:
+      - 8000:8000
