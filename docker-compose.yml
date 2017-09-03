@@ -7,7 +7,6 @@ services:
     volumes:
       - "./:/opt/dynamoDB-local/"
       - "~/.ivy2/:/root/.ivy2/"
-      - "~/.aws:/root/.aws"
     ports:
       - 5005:5005
 

@@ -10,4 +10,10 @@ object ScalaUtils
     Future {
       javaFuture.get()
     }
+
+  def toOption[A](value: A): Option[A] = value match
+    {
+      case null => None
+      case _ => Some(value)
+    }
 }
