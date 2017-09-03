@@ -1,7 +1,6 @@
 package com.ruchij
 
 import akka.actor.ActorSystem
-import com.amazonaws.auth.{AWSCredentials, AWSStaticCredentialsProvider}
 import com.amazonaws.client.builder.AwsClientBuilder.EndpointConfiguration
 import com.amazonaws.services.dynamodbv2.{AmazonDynamoDBAsync, AmazonDynamoDBAsyncClientBuilder}
 import com.ruchij.utils.{AwsUtils, DynamoDbUtils}
